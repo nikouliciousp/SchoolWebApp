@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.users-table thead {
+    display: table-header-group;
+    background-color: #f2f2f2; /* Γκρι χρώμα για την επικεφαλίδα */
+}
+
+.users-table tbody {
+    display: table-row-group;
+    overflow-y: auto;
+    max-height: 400px; /* Μέγιστο ύψος για scroll */
+    display: block;
+}
+
+.users-table th, .users-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 33.33%; /* Ισομερής κατανομή πλάτους στις στήλες */
+    box-sizing: border-box;
+}
+
+.users-table th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.users-table tr {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.users-table td {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Κεντραρισμός του περιεχομένου */
+}
+
+.users-table th:nth-child(1), .users-table td:nth-child(1) {
+    justify-content: center; /* Στοίχιση στα αριστερά για το Username */
+}
+
+.users-table th:nth-child(2), .users-table td:nth-child(2) {
+    justify-content: center; /* Στοίχιση στα αριστερά για το Password */
+}
+
+.users-table th:nth-child(3), .users-table td:nth-child(3) {
+    justify-content: center; /* Κεντραρισμός για τα κουμπιά στο Actions */
+}
+
+.users-table td:nth-child(3) button {
+    margin-right: 10px; /* Κενό μεταξύ των κουμπιών */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px /* Σταθερό πλάτος για κουμπιά */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.logout-button {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px; /* Τοποθέτηση του κουμπιού πιο κάτω */
+}
+
+.logout-button:hover {
+    background-color: #45a049;
+}
