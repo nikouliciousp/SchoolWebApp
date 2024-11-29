@@ -52,4 +52,4 @@ The School Management System is a web-based API that allows for the management o
 
 2. **Author**
 
-  Peris Nik
+     Peris Nik
